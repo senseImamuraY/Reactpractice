@@ -14,9 +14,12 @@ const divEl = document.querySelector(".container");
 
 console.log(divEl);
 // divEl.appendChild(buttonEl);
+import { AdminFlagProvider } from "./components/providers/AdminFlagProvider";
 
 root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+  <AdminFlagProvider>
+    <StrictMode>
+      <App />
+    </StrictMode>
+  </AdminFlagProvider>
 );
